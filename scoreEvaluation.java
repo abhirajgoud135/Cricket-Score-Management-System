@@ -3,6 +3,8 @@ public class scoreEvaluation{
 		int sum=0;
 		for(int i:a){
 			sum+=i;
+			if(i<0 && i>=6)
+				return -1;
 		}
 		return sum;
 	}
